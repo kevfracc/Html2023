@@ -7,7 +7,8 @@ body, h1, h2, h3, p, ul, li {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0; /* Adjust the padding for top and bottom */
+    padding: 5px 0; /* Adjust the padding for top and bottom */
+    position: relative; /* Needed for absolute positioning */
 }
 
 .header-content {
@@ -91,5 +92,58 @@ h1 {
     border-radius: 5px;
     box-sizing: border-box; /* Include padding and border in the width */
 }
+/* Update this in your existing CSS */
+.second-header-content {
+    display: flex;
+    text-align: center; /* Center the navigation */
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 0;
+}
 
+.nav-tabs {
+    list-style: none;
+    display: inline-block; /* Display navigation as an inline block */
+    margin: 0;
+    padding: 0;
+}
+.nav-tabs li {
+    display: inline-block; /* Display list items as inline block */
+    margin: 0 15px; /* Add some spacing between tabs */
+}
+.nav-tabs a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
+/* Add this to your existing CSS */
+.second-header-content nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Add this to your existing CSS */
+.menu-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    color: white; /* Set the text color for links */
+    text-decoration: none; /* Remove underlines from links */
+    padding: 10px; /* Add padding for visual spacing */
+}
+
+.menu-container.menu-open {
+    display: flex; /* Display the links when menu is open */
+    background-color: red; /* Change background color on hover */
+}
+
+.menu-container a:hover {
+    background-color: #444; /* Change background color on hover */
+}
