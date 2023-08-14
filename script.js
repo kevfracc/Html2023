@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+function openURL() {
+    window.open("https://www.cursor.so/pricing#faq");
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     // Retrieve the input values from Local Storage
     const leftInput = document.getElementById("left-input");
