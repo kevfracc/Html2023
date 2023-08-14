@@ -11,7 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
 function openURL() {
     window.open("https://www.cursor.so/pricing#faq");
 }
+document.addEventListener("DOMContentLoaded", function() {
+    var welcomePopup = document.getElementById("welcome-popup");
+    var okButton = document.getElementById("ok-button");
 
+    okButton.addEventListener("click", function() {
+        welcomePopup.style.display = "none";
+    });
+});
 document.addEventListener("DOMContentLoaded", function () {
     // Retrieve the input values from Local Storage
     const leftInput = document.getElementById("left-input");
