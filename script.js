@@ -25,25 +25,32 @@ document.addEventListener("DOMContentLoaded", function () {
     const rightInput = document.getElementById("right-input");
     const leftStoredInput = document.getElementById("left-stored-input");
     const rightStoredInput = document.getElementById("right-stored-input");
-
+    const leftScore = document.getElementById("left-score");
+    const rightScore = document.getElementById("right-score");
+ 
     leftInput.value = localStorage.getItem("leftInputValue") || "";
     rightInput.value = localStorage.getItem("rightInputValue") || "";
-
+    
     // Display the stored input values below the input elements
     leftStoredInput.textContent = leftInput.value;
     rightStoredInput.textContent = rightInput.value;
+    leftScore.textContent = leftInput.value !== "" ? 1 : 0;
+    rightScore.textContent = rightInput.value !== "" ? 1 : 0;
 
     // Store the input values to Local Storage when the inputs change
     leftInput.addEventListener("input", function () {
         localStorage.setItem("leftInputValue", leftInput.value);
         leftStoredInput.textContent = leftInput.value;
+        leftScore.textContent = leftInput.value !== "" ? 1 : 0;
     });
 
     rightInput.addEventListener("input", function () {
         localStorage.setItem("rightInputValue", rightInput.value);
         rightStoredInput.textContent = rightInput.value;
+        rightScore.textContent = rightInput.value !== "" ? 1 : 0;
     });
 });
+
 
 const loginButton = document.getElementById("login-button");
     

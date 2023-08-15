@@ -7,6 +7,12 @@ body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
+/* Changing the font family */
+.element {
+    font-family: Arial, sans-serif;
+    color: red;
+  }
+  
 /* Add this to your existing CSS */
 .popup {
     position: fixed;
