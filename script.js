@@ -19,6 +19,16 @@ document.addEventListener("DOMContentLoaded", function() {
         welcomePopup.style.display = "none";
     });
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    var welcomePopup = document.getElementById("welcome-popup"); // other popup
+    var okButton = document.getElementById("fu-button");
+
+    okButton.addEventListener("click", function() {
+        welcomePopup.style.display = "none"; //something else displayed
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function () {
     // Retrieve the input values from Local Storage
     const leftInput = document.getElementById("left-input");
