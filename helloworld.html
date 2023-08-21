@@ -13,16 +13,30 @@
     <!-- Rest of your content goes here -->
     <div id="welcome-popup" class="popup">
         <div class="popup-content">
-            <h2>Welcome to the Page!</h2>
-            <p>This is the welcome message.</p>
-            <button class="column" id="ok-button">OK</button>
-            <button class="column" id="fu-button">FU</button>
+            <div class="title">Pick a Side!</div>
+            <p>This is the welcome message. This can be the view for mobile users. Insert news here.</p>
+            <p>Total view count=?</p>
+            <button class="column" id="ok-button">OK Left</button>
+            <button class="column" id="fu-button">FU Right</button>
+            <br>
+            <p>Optional: leave a comment for one or both sides.</p>
+            <p></p>
+            <div  class="columns">
+                <div class="column">
+                    <h3>Left Side</h3>
+                    <input type="text" id="left-input" placeholder="Enter something...">
+                </div>
+                <div class="column">
+                    <h3>Right Side</h3>
+                    <input type="text" id="right-input" placeholder="Enter something...">
+                </div>
+            </div>
         </div>
     </div>
     <header id="top">
         <div class="header-content">
             <button class="column" id="menu-button"> Make a </button>
-            <div id="page-title" href="helloworld.html">Welcome to the Page!</div>
+            <div id="page-title" href="helloworld.html">Welcome to the Page! #Fix</div>
             <button class="column" id="login-button"> New Class </button>
         </div>
     </header>
@@ -47,6 +61,9 @@
         <a href="#bottom">To The Bottom</a>
         <h2 class="title">Greed is Good</h2>
         <h2 class="subheader">We ball</h2>
+        <h2 class="subheader">W-hat was i going to say here</h2>
+        <h2 class="subheader">We are public https://kevfracc.github.io/Html2023/</h2>
+        
         <h1 class="link" onclick="openURL()">Cursor.so</h1>
 
         <div class="w3-container">
@@ -63,22 +80,15 @@
             <div class="column">
                 <h3>Left Score</h3>
                 <p id="left-score"></p>
+                <p id="left-percentage"></p>
             </div>
             <div class="column">
                 <h3>Right Score</h3>
                 <p id="right-score"></p>
+                <p id="right-percentage"></p>
             </div>
         </div> 
-        <div  class="columns">
-            <div class="column">
-                <h3>Left Side</h3>
-                <input type="text" id="left-input" placeholder="Enter something...">
-            </div>
-            <div class="column">
-                <h3>Right Side</h3>
-                <input type="text" id="right-input" placeholder="Enter something...">
-            </div>
-        </div>
+       
         <div class="columns">
             <div class="column">
                 <h3>Left Results</h3>
@@ -89,6 +99,7 @@
                 <p id="right-stored-input"></p>
             </div>
         </div>
+        <br>
         <a href="#top" id="bottom">Back To Top</a>
 
 

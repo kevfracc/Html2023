@@ -1,3 +1,23 @@
+
+//TODO
+
+// POPUP
+//Have the click be recorded, then total sum presented on next screen
+
+//HEADER
+//search bar for hidden redirects (scrap site etc.)
+
+//STORAGE
+// function new_comment (message, user, position [values=1,2,3,4], time? etc.) {get a rank/timeofpost/position/highscore compared to others}
+
+// RESULTS
+//left-percentage; right-percentage
+// today's count; this weeks count; all time count; general vs premium count; ALL DIFFERENT FLAIRES 
+///percentage bar showing whos winning (60/40 left is winning, left's bar is across 60% of the screen)
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.getElementById("menu-toggle");
     const menuBar = document.querySelector(".menu-bar");
