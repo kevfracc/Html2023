@@ -42,7 +42,7 @@ body, h2, h3, ul, li {
 
 .popup-content {
     background-color: rgba(255, 255, 255, 0.659);
-    padding: 10px;
+    padding: 100px;
     border-radius: 5px;
     text-align: center;
 }
@@ -154,11 +154,14 @@ h1 {
 }
 /* Add this to your existing CSS */
 .column {
-    width: calc(50% - 10px); /* Subtract 1px to account for the line's width */
-    padding: 10px 10px 10px 10px; /* Add padding-right */
+    width: calc(50% - 5px); /* Subtract 1px to account for the line's width */
+    padding: 30px; /* Add padding-right */
     border: 1px solid #ddd;
     border-radius: 5px;
     box-sizing: border-box; /* Include padding and border in the width */
+    font-size: 24px; /* Adjust the font size for the title */
+
+ 
 }
 /* Update this in your existing CSS */
 .second-header-content {
