@@ -93,6 +93,7 @@
 .second-header-button#menu-button {
     background-color: white;
     color: black;
+    margin-right: 8.5%;
 }
 
 .second-header-button#login-button {
