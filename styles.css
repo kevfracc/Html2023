@@ -2,7 +2,6 @@
     --primary-color: rgb(134, 3, 3);  
   }
 
-
 /*
   // POP-UP 
   //hover different colors for left/right
@@ -15,17 +14,6 @@
 //percentage bar showing whos winning (60/40 left is winning, left's bar is across 60% of the screen)
 */
 
-  /* Reset some default browser styles */
-body, h2, h3, ul, li {
-    margin: 0;
-    padding: 10px 10px;
-}
-/* Changing the font family */
-.element {
-    font-family: Arial, sans-serif;
-    color: red;
-  }
-  
 /* Add this to your existing CSS */
 .popup {
     position: fixed;
@@ -47,197 +35,23 @@ body, h2, h3, ul, li {
     text-align: center;
 }
 
-#ok-button {
-    margin-top: 10px;
-}
-header {
-    background-color: var(--primary-color);
-    color: #fff;
-    padding: 5px 0; /* Adjust the padding for top and bottom */
-    position: relative; /* Needed for absolute positioning */
-    text-decoration: none;
-
-}
-
-.header-content {
-    display: flex;
-    justify-content: space-around;
-    align-content: space-between;      /* vertical alignment of grid tracks */
-    grid-template-columns: auto auto;  /* grid has two columns; content defines width */
-    align-items: center;
-    max-width: 1500px; /* Set a max width for the content */
-    margin: auto ;
-    text-decoration: none;
-
-}
-
-h1 {
-    font-size: 24px; /* Adjust the font size for the title */
-    margin: 0;
-    flex: 1; /* Let the title take up available space */
-    text-align: center; /* Center the title text */
-    text-decoration: none;
-
-}
-
-#page-title {
-    font-size: 40px; /* Adjust the font size for the title */
-    margin: 0;
-    flex: 1; /* Let the title take up available space */
-    text-align: center; /* Center the title text */
-    color: white;
-    text-decoration-line: none;
-
-}
-
-#menu-button {
-    background-color: white;
-    color: black;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px; /* Adjust the font size for the title */
-}
-
-#login-button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px; /* Adjust the font size for the title */
-}
-
-
-/* Add this to your existing CSS */
-.content {
-    text-align: center;
-    padding: 40px;
-}
-
-.title {
-    font-size: 36px;
-    color: green;
-    margin-top: 10px;
-
-}
-.subheader {
-    font-size: 28px;
-}
-
-.column h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
-}
-
-
-.subheader {
-    font-size: 24px;
-}
-
-.link {
-    font-size: 24px;
-    color: #007bff;
-    text-decoration: underline;
-    cursor: pointer; /* Change cursor to pointer on hover */
-
-}
-
-/* Add this to your existing CSS */
-.columns {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start; /* Align columns' content at the top */
-    margin-top: 10px;
-}
-/* Add this to your existing CSS */
-.column {
-    width: calc(50% - 5px); /* Subtract 1px to account for the line's width */
-    padding: 30px; /* Add padding-right */
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-sizing: border-box; /* Include padding and border in the width */
-    font-size: 24px; /* Adjust the font size for the title */
-
- 
-}
-/* Update this in your existing CSS */
-.second-header-content {
-    display: flex;
-    text-align: center; /* Center the navigation */
-    justify-content: center;
-    align-items: center;
-    background-color: var(--primary-color);
-    padding: 10px 10px;
-}
-
-.nav-tabs {
-    list-style: none;
-    display: inline-block; /* Display navigation as an inline block */
-    margin: 0;
-    padding: 0;
-
-}
-.nav-tabs li {
-    display: inline-block; /* Display list items as inline block */
-    margin: 0 15px; /* Add some spacing between tabs */
-    font-size: 26px;
-}
-.nav-tabs a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-}
-
-/* Add this to your existing CSS */
-.second-header-content nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Add this to your existing CSS */
-.menu-container {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #cd4910;
-    display: none; /* Hide the links by default */
-    flex-direction: column;
-    color: white; /* Set the text color for links */
-    text-decoration: none; /* Remove underlines from links */
-    padding: 10px; /* Add padding for visual spacing */
-}
-
-.menu-container.menu-open {
-    display: flex; /* Display the links when menu is open */
-    background-color: #cd4910; /* Change background color on hover */
-}
-
-.menu-container a:hover {
-    background-color: #444; /* Change background color on hover */
-}
-
 .button-container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
+    margin: 10px;
 }
 
 .new-button {
     background-color: transparent;
-    border: none;
+    border: 2px solid #ddd;
     cursor: pointer;
-    padding: 10px;
-    margin: 0 5px;
+    padding: 20px;
+    margin: 10px;
     color: #fff;
     transition: background-color 0.3s ease;
-  }
-  
+    align-self: flex-start; /* Align button at the top */
+    font-size: 26px;
+}
   .new-button:hover {
     background-color: green; /* Change to desired hover color for ok-button */
   }
@@ -245,3 +59,84 @@ h1 {
   .new-button#fu-button:hover {
     background-color: red; /* Change to desired hover color for fu-button */
   }
+ 
+.second-header-content {
+    display: flex; /* Display navigation as an inline block */
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    /* background-color: var(--primary-color); */ 
+    background-color: black;
+    padding: auto;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+}
+.second-header-content a {
+    color: white;
+    flex-grow: 1; /* Updated */
+}
+
+.second-header-content a#fracc {
+    text-decoration: none;
+}
+
+.second-header-button {
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+}
+
+.second-header-button#menu-button {
+    background-color: white;
+    color: black;
+}
+
+.second-header-button#login-button {
+    background-color: #007bff;
+    color: #fff; 
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    text-align: center;
+    padding: auto;
+}
+
+.title {
+    font-size: 36px;
+    color: green;
+}
+
+.subheader {
+    font-size: 28px;
+}
+
+.link {
+    font-size: 24px;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Add this to your existing CSS */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Align columns' content at the top */
+}
+/* Add this to your existing CSS */
+.column {
+    width: calc(50% - 5px); /* Subtract 1px to account for the line's width */
+    padding: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box; /* Include padding and border in the width */
+    font-size: 24px; /* Adjust the font size for the title */
+}
