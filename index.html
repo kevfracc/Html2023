@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+        <!-- its start, not open on windows: start welcome.html -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>For or Against?</title>
+</head>
+
+<body>
+
+    <!-- Popup -->
+
+    <div id="welcome-popup" class="popup">
+        <div class="popup-content">
+            <div class="title">Pick a Side!</div>
+            <p>This is the welcome message. This can be the view for mobile users. Insert news here. 
+                The first screen should be the home page urging people to sign in to view/sumbit results. 
+                Then, push this screen for daily polling. After submitting poll/comments, display results. </p>
+
+            <p>Total view count=?</p>
+            <div class="button-container">
+                <h3>Please enter your username. </h3>
+                <h3>Make this a new div class not "column"</h3>
+                <input type="text" id="username-input" placeholder="Enter your username">
+            </div>
+            <div class="button-container">
+            <button class="column new-button" id="ok-button">OK Left</button>
+            <button class="column new-button" id="fu-button">FU Right</button>
+            </div>
+            <br>
+            <h3>Optional: leave a comment for one or both sides.</h3>
+            <p></p>
+            <div  class="button-container">
+                <div class="column new-button">
+                    <h3>Left Side</h3>
+                    <input type="text" id="left-input" placeholder="Enter something...">
+                </div>
+                <div class="column new-button">
+                    <h3>Right Side</h3>
+                    <input type="text" id="right-input" placeholder="Enter something...">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main page -->
+
+    <header class="second-header-content">
+            <button class="second-header-button" id="menu-button"> Search </button>
+            <a href="new-post.html">New Post</a>
+            <a href="trending-posts.html">Trending Posts</a>
+            <a id='fracc' href="test.html">Fraccology</a>
+            <a href="users.html">Notable Members</a>
+            <a href="about.html">About Me</a>
+            <button class="second-header-button" id="login-button"> Login </button>
+    </header>
+    
+    <main class="content">
+        <br>
+        <a href="#bottom">To The Bottom</a>
+        <h2 class="title">Greed is Good</h2>
+        <h2 class="subheader">We ball</h2>
+        <h2 class="subheader">W-hat was i going to say here</h2>
+        <h2 class="subheader">We are public https://kevfracc.github.io/Html2023/</h2>
+        
+        <h1 class="link" onclick="openURL()">Cursor.so</h1>
+
+        <div class="w3-container">
+            <p>next time submit links like this on a saved txt file</p>
+            <p>https://www.w3schools.com/html/html_forms.asp</p>
+            <p>Check out advanced nba stats https://www.kaggle.com/datasets/owenrocchi/nba-advanced-stats-20022022</p>
+        </div>
+        <div class="image-container">
+            <img src="https://i.natgeofe.com/n/939ca62b-5de8-4c3e-bbfc-6f1e7bb143a8/main_lastjudge_gettyimages-533794106_3x4.jpg" 
+            alt="A beautiful landscape" 
+            style="width: 260px; height: auto;">
+            
+        </div>
+        <div class="columns">
+            <div class="column">
+                <h3>Left Score</h3>
+                <p id="left-score"></p>
+                <p id="left-percentage"></p>
+            </div>
+            <div class="column">
+                <h3>Right Score</h3>
+                <p id="right-score"></p>
+                <p id="right-percentage"></p>
+            </div>
+        </div> 
+       
+        <div class="columns">
+            <div class="column">
+                <h3>Left Results</h3>
+                <p id="left-stored-input"></p>
+            </div>
+            <div class="column">
+                <h3>Right Results</h3>
+                <p id="right-stored-input"></p>
+            </div>
+        </div>
+        <br>
+        <a href="#top" id="bottom">Back To Top</a>
+
+
+        <!-- Rest of your content -->
+    </main>    
+    <!-- Other HTML content above this -->
+<script src="script.js"></script>
+</body>
+</html>

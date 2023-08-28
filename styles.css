@@ -52,13 +52,13 @@
     align-self: flex-start; /* Align button at the top */
     font-size: 26px;
 }
-  .new-button:hover {
-    background-color: green; /* Change to desired hover color for ok-button */
-  }
-  
-  .new-button#fu-button:hover {
-    background-color: red; /* Change to desired hover color for fu-button */
-  }
+.new-button:hover {
+    background-color: yellow; /* Change to desired hover color for ok-button */
+}
+
+.new-button#fu-button:hover {
+    background-color: pink; /* Change to desired hover color for fu-button */
+}
  
 .second-header-content {
     display: flex; /* Display navigation as an inline block */
