@@ -20,36 +20,37 @@ function openURL() {
     window.open("https://www.cursor.so/pricing#faq");
 }
 
-const loginButton = document.getElementById("login-button");
+
+// const loginButton = document.getElementById("login-button");
     
-loginButton.addEventListener("click", function () {
-    // Add your login functionality here
-    alert("Login button clicked!");
-});
+// loginButton.addEventListener("click", function () {
+//     // Add your login functionality here
+//     alert("Login button clicked!");
+// });
 
-document.addEventListener("DOMContentLoaded", function () {
-    const menuToggle = document.getElementById("menu-button");
-    const menuContainer = document.getElementById("menu-container");
-    const navTabs = document.querySelectorAll(".nav-tabs li a");
+// document.addEventListener("DOMContentLoaded", function () {
+//     const menuToggle = document.getElementById("menu-button");
+//     const menuContainer = document.getElementById("menu-container");
+//     const navTabs = document.querySelectorAll(".nav-tabs li a");
 
-    menuToggle.addEventListener("click", function () {
-        menuContainer.innerHTML = ""; // Clear existing links
+//     menuToggle.addEventListener("click", function () {
+//         menuContainer.innerHTML = ""; // Clear existing links
 
-        if (!menuContainer.classList.contains("menu-open")) {
-            menuContainer.classList.add("menu-open");
+//         if (!menuContainer.classList.contains("menu-open")) {
+//             menuContainer.classList.add("menu-open");
 
-            navTabs.forEach(link => {
-                const navLinkElement = document.createElement("a");
-                navLinkElement.href = link.href;
-                navLinkElement.textContent = link.textContent;
+//             navTabs.forEach(link => {
+//                 const navLinkElement = document.createElement("a");
+//                 navLinkElement.href = link.href;
+//                 navLinkElement.textContent = link.textContent;
 
-                menuContainer.appendChild(navLinkElement);
-            });
-        } else {
-            menuContainer.classList.remove("menu-open");
-        }
-    });
-});
+//                 menuContainer.appendChild(navLinkElement);
+//             });
+//         } else {
+//             menuContainer.classList.remove("menu-open");
+//         }
+//     });
+// });
 
 
 document.addEventListener("DOMContentLoaded", function() {
